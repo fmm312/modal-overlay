@@ -1,0 +1,122 @@
+.modal-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: fadein 0.7s;
+    -moz-animation: fadein 0.7s;
+    -ms-animation: fadein 0.7s;
+    -o-animation: fadein 0.7s;
+    animation: fadein 0.7s;
+  
+    @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+  
+    @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+  
+    @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+  
+    @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+  
+    @-o-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+  
+    .modal-container {
+      background: #FFFFFF;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      width: 90%;
+  
+      @media (min-width: 768px) {
+        width: 450px;
+      }
+  
+      .modal-header {
+        background: #5FAF61;
+        border-radius: 10px 10px 0 0;
+        height: 70px;
+        display: flex;
+        padding: 20px;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+  
+        .icon-container {
+          .close-icon {
+              font-size: 24px;
+              color: #ffffff;
+              cursor: pointer;
+          }
+        }
+  
+        h3 {
+          margin: 0;
+          font-weight: 800;
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 400;
+          color: #ffffff;
+        }
+      }
+  
+      .modal-description {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .check-icon {
+            color: #5FAF61;
+            font-size: 80px;
+        }
+  
+        p {
+            font-size: 18px;
+
+            span {
+                font-weight: 400;
+            }
+        }
+      }
+
+      .modal-footer {
+        border-top: 1px solid #e2e2e2;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            color: #5FAF61;
+            border: 1px solid #5FAF61;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #ffffff;
+            font-weight: 700;
+        }
+      }
+    }
+  }
+  
